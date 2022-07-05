@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+.top_bg {
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/news_top.png);
+  background-size: cover;
+  background-position: 0 55%;
+  position: relative;
+}
+
+.news_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.news_item {
+  display: flex;
+  justify-content: center;
+  margin: 5% auto 5% auto;
+}
+
+.news_img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.news_img img {
+  width: 350px;
+  height: 296px;
+  object-fit: cover;
+  border-radius: 0 40px 0 40px;
+}
+
+.news_img img:hover {
+  transform: scale(1.08);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.mask {
+  display: block;
+  line-height: 0;
+  /*行の高さを0にする*/
+  border-radius: 0 40px 0 40px;
+  overflow: hidden;
+  /*拡大してはみ出る要素を隠す*/
+}
+
+.news_txt {
+  width: 40%;
+
+}
+
+.news_txt p {
+  width: 65%;
+  margin-top: 10%;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .news_inner {
+    width: 90%;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {}
+

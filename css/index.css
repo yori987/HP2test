@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+.top {
+  
+  width: 100%;
+  height: 100vh;
+}
+
+.top_bg {
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/top_2.png);
+  background-size:auto;
+  background-position:0 10%;
+}
+
+.top_bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.top_logo {
+  width: 80%;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: translate(-45%, -25%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_logo p {
+  color: #fff;
+}
+
+/*NEWS
+--------------------*/
+
+.news_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.news_item {
+  display: flex;
+  justify-content: center;
+  margin-bottom:5%;
+}
+
+.news_img {
+  width:50%;
+  display: flex;
+  justify-content: center;
+}
+
+.news_img img {
+  width:350px;
+  height:296px;
+  object-fit: cover;
+  border-radius: 0 40px 0 40px;
+}
+
+.news_img img:hover {
+  transform: scale(1.08);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.mask {
+  display: block;
+  line-height: 0;
+  /*行の高さを0にする*/
+  border-radius: 0 40px 0 40px;
+  overflow: hidden;
+  /*拡大してはみ出る要素を隠す*/
+}
+
+.news_txt {
+  width:40%;
+  
+}
+
+.news_txt p {
+  width:65%;
+  margin-top:10%;
+}
+
+/*PRODUCTS
+-------------------*/
+
+.products_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #D2E1E4;
+}
+
+.products_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+.products_txt {
+  margin:0 auto;
+  width:30%;
+  text-align: center;
+}
+
+.products_all {
+  width:70%;
+  text-align: center;
+  margin:0 auto;
+}
+
+.products_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products_item {
+  position: relative;
+  margin: 10% 0;
+}
+
+.products_item._products1 {
+  
+}
+
+.products_item._products2 {
+  top:7.5rem;
+  
+}
+
+.products_item._products3 {
+  margin-top:0rem;
+  
+}
+
+.products_item._products4 {
+  top:1rem;
+  
+}
+
+.products_img {
+  width:100%;
+  
+  
+}
+
+.products_img img {
+  width:365px;
+  height: 333px;
+  object-fit: cover;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+
+.products_name {
+  position: absolute;
+  width:90%;
+  top:-5%;
+  left: 5%;
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  padding: 5% 0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.products_img img:hover {
+  transform: scale(1.08);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.mask_2 {
+  display: block;
+  line-height: 0;
+  /*行の高さを0にする*/
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  /*拡大してはみ出る要素を隠す*/
+}
+
+.products_name a {
+  display: block;
+}
+
+.products_btn a {
+  background-color: #D2E1E4;
+}
+
+/*ABOUT
+------------*/
+
+.about_wrapper {
+  width:100%;
+  margin:5% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.about_img {
+  width:50%;
+  
+
+}
+
+.about_img img {
+  width:100%;
+  height:65%;
+  object-fit: cover;
+  border-radius: 0 20px 20px 0; 
+}
+
+.about_txt {
+  width:50%;
+  text-align: center;
+}
+
+.about_txt p {
+  margin:10% auto;
+}
+
+.about_txt .btn {
+  width:50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .top{
+    height: 80vh;
+  }
+
+  .top_bg {
+    background-position: 10% 10%;
+  }
+
+  .news_inner {
+    width:90%;
+  }
+
+  .products_txt {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .products_all {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .top_bg {
+      background-position: 20% 10%;
+    }
+
+  .top_logo {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+    .top_logo p {
+      font-size: 1.3rem;
+    }
+
+  
+  .news_item {
+    display: block;
+    align-items: center;
+    
+  }
+
+  .news_img {
+    margin: 0 auto;
+  }
+
+  .news_txt {
+    margin: 0 auto;
+    width: 35%;
+
+  }
+
+    .news_txt p {
+      width: 100%;
+      margin-top: 10%;
+    }
+
+
+    
+    .products_all {
+      width: 100%;
+    }
+
+
+    .products_txt {
+      
+      width: 90%;
+      margin-top: 5%;
+      margin-bottom: 10%;
+      
+    }
+
+  .products_list {
+    display: block;
+  }
+
+  .products_item{
+    width: 100%;
+  }
+
+  .products_item._products2,
+  .products_item._products3,
+  .products_item._products4 {
+    top:unset;
+    margin:20% auto;
+  }
+
+  
+
+
+
+
+
+}
+
+

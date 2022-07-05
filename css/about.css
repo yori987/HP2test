@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+.top_bg {
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/about_top.png);
+  background-size: cover;
+  background-position: 0 50%;
+  position: relative;
+}
+
+.about_wrapper {
+  margin-bottom:10%;
+}
+
+.about_wrapper_1 {
+  width:100%;
+}
+
+.about_inner {
+  width:80%;
+  margin:0 auto;
+}
+
+.about_inner_1 {
+  width:60%;
+}
+
+.about_item {
+  display: flex;
+  justify-content:space-around;
+  margin-top:10%;
+}
+
+.about_item:last-child{
+  margin-bottom:10%;
+}
+
+.about_img {
+  width:50%;
+  text-align:center;
+}
+
+.about_img img {
+  width:350px;
+  height: 296px;
+  object-fit: cover;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about_txt {
+  width:35%;
+  margin:5% auto 0 auto;
+  display: block;
+  text-align:center;
+  margin-left: 5%;
+}
+
+.about_txt h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom:5%;
+  
+}
+
+.about_txt ul {
+  display: inline-block;
+    text-align: left;
+}
+
+.about_txt li{
+  
+}
+
+.about_item_2 {
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+
+.office_all {
+  padding: 5.5%;
+  display: flex;
+  border: solid 1px #333;
+}
+
+.office_list {
+  width: 50%;
+}
+
+.office_item {
+  margin-bottom: 7.5%;
+}
+
+.office_item_ttl {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom:3%;
+}
+
+.office_item_txt {
+  font-size: 1.1rem;
+  display: block;
+  
+}
+
+
+
+.about_inner {
+  margin-bottom:10%;
+}
+
+
+
+.about_acc_map_wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom:5%;
+}
+
+.about_acc_map {
+  width: 50%;
+  height: 52.5vh;
+}
+
+.about_acc_map iframe {
+  width: 100%;
+  height: 90%;
+}
+
+.about_acc_list {
+  margin-left:7.5%;
+}
+
+.about_acc_item {
+  width: 100%;
+  margin-bottom: 7.5%;
+}
+
+.about_acc_ttl {
+  margin-bottom: 2.5%;
+  font-size: 1.5rem;
+}
+
+.about_acc_txt {
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .about_inner {
+      width: 90%;
+      
+    }
+
+  
+    .about_acc_map {
+      width: 40%;
+      height: 25vh;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+

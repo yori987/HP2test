@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.top_bg {
+  z-index: -99;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/products_top.png);
+  background-size: cover;
+  background-position: 0 50%;
+  position: relative;
+}
+
+.products_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.products_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+.products_txt {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+}
+
+.products_all {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.products_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.products_item {
+  position: relative;
+  margin: 10% 0;
+}
+
+.products_item._products1 {}
+
+.products_item._products2 {
+  top: 7.5rem;
+
+}
+
+.products_item._products3 {
+  margin-top: 0rem;
+
+}
+
+.products_item._products4 {
+  top: 1rem;
+
+}
+
+.products_img {
+  width: 100%;
+
+
+}
+
+.products_img img {
+  width: 365px;
+  height: 333px;
+  object-fit: cover;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.products_name {
+  position: absolute;
+  width: 90%;
+  top: -5%;
+  left: 5%;
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  padding: 5% 0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.products_img img:hover {
+  transform: scale(1.08);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.mask_2 {
+  display: block;
+  line-height: 0;
+  /*行の高さを0にする*/
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  /*拡大してはみ出る要素を隠す*/
+}
+
+.products_name a {
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .products_txt {
+      width: 50%;
+  }
+
+  .products_all {
+    width: 90%;
+
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {}

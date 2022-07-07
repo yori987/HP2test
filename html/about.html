@@ -12,7 +12,7 @@
     <meta property="og:image" content="img/logo1.png">
     <meta property="og:description" content="あなたの「美しさ」を内から引き出す">
     <meta property="og:site_name" content="ヘアケア商品">
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="../img/favicon.png">
     <link rel="apple-touch-icon" sizes="180×180" href="img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,9 +62,9 @@
         </ul>
       </section>
 
-      <section class="about_wrapper_1 about_wrapper">
+      <section class="about_wrapper_1 about_wrapper section">
         <div class="about_inner about_inner_1">
-          <h2 class="ttl">ABOUT US</h2>
+          <h2 class="ttl" id="aboutus">ABOUT US</h2>
           <div class="about_item">
             <div class="about_img">
               <img src="../img/about_1.png" alt="自然">
@@ -96,7 +96,7 @@
 
       <section class="about_wrapper_2 about_wrapper">
         <div class="about_inner">
-          <h2 class="ttl">COMPANY</h2>
+          <h2 class="ttl" id="company">COMPANY</h2>
           <div class="office_all">
             <div class="office_list">
               <div class="office_item">
@@ -132,9 +132,9 @@
         </div>
       </section>
 
-      <section class="about_wrappe_3 about_wrapper">
+      <section class="about_wrapper_3 about_wrapper">
         <div class="about_inner">
-          <h2 class="ttl">OFFICE</h2>
+          <h2 class="ttl" office>OFFICE</h2>
         </div>
         <div class="about_acc_map_wrapper">
           <div class="about_acc_map">
@@ -182,25 +182,25 @@
       <div class="footer_1">
         <div class="footer_list">
           <ul class="footer_list_item list_1">
-            <li><a href="html/products.html" class="list_ttl">PRODUCTS</a></li>
-            <li><a href="#">HAIR CARE</a></li>
-            <li><a href="#">STYLING</a></li>
+            <li class="list_ttl"><a href="products.html">PRODUCTS</a></li>
+            <li class="sp"><a href="produts/html#haircare">HAIR CARE</a></li>
+            <li class="sp"><a href="products.html#styling">STYLING</a></li>
           </ul>
-            <ul class="footer_list_item list_2">
-              <li><a href="html/news.html" class="list_ttl">NEWS</a></li>
-              <li><a href="#">TOPIC</a></li>
-            </ul>
-            <ul class="footer_list_item list_3">
-              <li><a href="html/about.html" class="list_ttl">ABOUT</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">COMPANY</a></li>
-              <li><a href="#">OFFICE</a></li>
-            </ul>
-            <ul class="footer_list_item list_4">
-              <li><a href="html/contact.html" class="list_ttl">CONTACT</a></li>
-            </ul>
-          </div>
+          <ul class="footer_list_item list_2">
+            <li class="list_ttl"><a href="news.html">NEWS</a></li>
+            <li class="sp"><a href="news.html#topic">TOPIC</a></li>
+          </ul>
+          <ul class="footer_list_item list_3">
+            <li class="list_ttl"><a href="about.html">ABOUT</a></li>
+            <li class="sp"><a href="about.html#aboutus">ABOUT US</a></li>
+            <li class="sp"><a href="about.html#company">COMPANY</a></li>
+            <li class="sp"><a href="about.html#office">OFFICE</a></li>
+          </ul>
+          <ul class="footer_list_item list_4">
+            <li class="list_ttl"><a href="contact.html">CONTACT</a></li>
+          </ul>
         </div>
+      </div>
         <div class="footer_2">
           <div class="footer_logo">
             <a href="#"><img src="../img/logo2.png" alt="ロゴ"></a>
@@ -221,11 +221,8 @@
       </footer>
       
       
-      
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <!--自作のJS-->
-      <script src="js/common.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="../js/common.js"></script>
   </body>
 
 </html>

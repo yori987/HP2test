@@ -87,4 +87,51 @@
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .contact_box {
+      display: grid;
+    }
+
+    .contact_form_box1,
+    .contact_form_box2 {
+      width: 90%;
+      margin: 2.5% auto;
+    }
+
+    .contact_form_ttl {
+      width:90%;
+      margin:0 auto 2% auto;
+    }
+
+    .contact_form_ttl::after {
+      left: 90%;
+    }
+
+    .contact_txtarea {
+      width: 90%;
+      margin: 2.5% auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+  .contact_txt {
+      margin-top:10%;
+      margin-bottom: 20%;
+      font-size: 0.5rem;
+    }
+  
+  .contact_txt::after {
+    height: 1px;
+    bottom:-3.5rem;
+  }
+
+  .contact_form {
+    margin: 30% auto 15% auto;
+  }
+
+  .contact_form_ttl {
+    font-size: 1rem;
+  }
+  
+}

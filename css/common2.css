@@ -82,4 +82,28 @@
     }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  .top_ttl {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: max-content;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+  .top_ttl {
+    font-size: 2rem;
+  }
+
+    .breadcrumb_item {
+      font-size: 0.8rem;
+    }
+  
+    .breadcrumb_item::after {
+      content: ">";
+      padding: 0 10px;
+      font-size: 0.8rem;
+    }
+}

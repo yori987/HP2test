@@ -83,14 +83,14 @@
 
 
 .office_all {
-  padding: 5.5%;
+  padding: 3.5%;
   display: flex;
-  justify-content: end;
+  justify-content: space-evenly;
   border: solid 1px #333;
 }
 
 .office_list {
-  width: 45%;
+  width: 40%;
 }
 
 .office_item {
@@ -108,8 +108,6 @@
   display: block;
   
 }
-
-
 
 .about_inner {
   margin-bottom:10%;

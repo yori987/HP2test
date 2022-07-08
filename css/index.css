@@ -67,9 +67,16 @@
   justify-content: center;
 }
 
+.news_img a {
+  width: 70%;
+  text-align: center;
+}
+
+
+
 .news_img img {
-  width:350px;
-  height:296px;
+  width:100%;
+  height:35vh;
   object-fit: cover;
   border-radius: 0 40px 0 40px;
 }
@@ -161,22 +168,24 @@
 
 .products_img {
   width:100%;
-  
-  
+  position: relative;
+}
+
+.products_img a {
+
 }
 
 .products_img img {
-  width:365px;
-  height: 333px;
+  width: 25vw;
+  height: 30vh;
   object-fit: cover;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
   
 }
 
 .products_name {
-  position: absolute;
   width:90%;
-  top:-5%;
+  top:-10%;
   left: 5%;
   position: relative;
   z-index: 3;
@@ -254,6 +263,10 @@
     width:90%;
   }
 
+  .news_img img {
+    height: 20vh;
+  }
+
   .products_txt {
     margin: 0 auto;
     width: 50%;
@@ -265,6 +278,20 @@
     text-align: center;
     margin: 0 auto;
   }
+
+  .products_img img {
+    width: 42vw;
+    height: 25vh;
+  }
+
+    .mask_2 {
+      display: block;
+      line-height: 0;
+      /*行の高さを0にする*/
+      box-shadow:none;
+      overflow:none;
+      /*拡大してはみ出る要素を隠す*/
+    }
 
 }
 
@@ -294,6 +321,14 @@
     margin: 0 auto;
   }
 
+  .news_img a {
+    width: 85%;
+  }
+
+  .news_img img {
+    height: 25vh;
+  }
+
   .news_txt {
     margin: 0 auto;
     width: 35%;
@@ -314,7 +349,7 @@
 
     .products_txt {
       
-      width: 90%;
+      width: 100%;
       margin-top: 5%;
       margin-bottom: 10%;
       
@@ -328,8 +363,16 @@
     width: 100%;
   }
 
+
+  .products_img img {
+    width: 41vw;
+    height: 30vh;
+  }
+
   .products_name {
+    width: 85%;
     top: -2rem;
+    left:8%;
   }
 
   .products_item._products2,
@@ -395,6 +438,11 @@
     width:100%;
   }
 
+  .news_img img {
+    width: 70vw;
+    height: 28vh;
+  }
+
   .news_txt {
     width: 80%;
   }
@@ -409,11 +457,29 @@
       width: 90%;
     }
 
+    .products_txt {
+      font-size: 0.8rem;
+    }
+
     .products_item._products2,
     .products_item._products3,
     .products_item._products4 {
       margin: 10% auto;
     }
+
+    .products_img img {
+      width: 100%;
+      height: 30vh;
+    }
+
+    .products_name {
+      width: 70%;
+      top: -2rem;
+      left: 12%;
+      padding:4%;
+    }
+
+
 
     .about_inner {
       margin:5% auto 20% auto;
@@ -421,7 +487,7 @@
 
 
     .about_txt .btn {
-      width: unset;
+      width:15rem;
     }
 
 

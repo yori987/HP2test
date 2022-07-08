@@ -516,6 +516,12 @@ header .drawer {
     }
 
 
+    .btn {
+      width: 15rem;
+      margin: 0 auto;
+      line-height: 4;
+    }
+
 
 
 }

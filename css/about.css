@@ -43,8 +43,8 @@
 }
 
 .about_img img {
-  width:350px;
-  height: 296px;
+  width:25vw;
+  height: 30vh;
   object-fit: cover;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -85,11 +85,12 @@
 .office_all {
   padding: 5.5%;
   display: flex;
+  justify-content: end;
   border: solid 1px #333;
 }
 
 .office_list {
-  width: 50%;
+  width: 45%;
 }
 
 .office_item {
@@ -161,6 +162,11 @@
       width: 40%;
       height: 25vh;
     }
+
+    .about_img img {
+      width: 100%;
+      height: 30vh;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -228,7 +234,7 @@
 @media screen and (max-width: 480px) {
 
   .about_inner_1 {
-      width: 100%;
+      width: 90%;
     }
 
     .office_all {
